@@ -1,0 +1,58 @@
+image: ruby:latest
+
+cache:
+  paths:
+    - vendor
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+  NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+
+before_script:
+  - gem install bundler
+  - bundle install
+  - apt-get update -qq && apt-get install -y -qq sshpass rsync
+
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+deploy:
+  stage: deploy
+  script:
+  - bundle exec jekyll build --config _config.yml,_config_deploy.yml -d public
+  # - mkdir /root/.ssh                                # Create .ssh directory
+  # - chmod 700 /root/.ssh                            # Set permissions
+  # - touch /root/.ssh/known_hosts                    # Create known_hosts files
+  # - chmod 600 /root/.ssh/known_hosts                # Set permissions
+  # - ssh-keyscan -H $HOST >> /root/.ssh/known_hosts  # Add server to known_hosts, "set sftp:auto-confirm" does not work
+  # - find public -type d -print0 | xargs -0 chmod 755 
+  # - find public -type f -print0 | xargs -0 chmod 644
+  - ls -l public/
+  # - ftp -e "mirror -e --reverse --verbose=3 -p --overwrite public/ www/ ; quit" -u $USER,$PASSWORD sftp://$HOST -p 22
+  - sshpass -V
+  - export SSHPASS=$PASSWORD 
+  # - sshpass -e scp -o stricthostkeychecking=no -r public $USER@$HOST:www/
+  - rsync -avzi --progress --rsh="/usr/bin/sshpass -e ssh -o StrictHostKeyChecking=no -l $USER" public/ $USER@$HOST:www/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
