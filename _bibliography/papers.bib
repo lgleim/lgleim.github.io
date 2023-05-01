@@ -10,6 +10,7 @@ title = {{Towards a FAIR Sharing of Scientific Experiments: Improving Discoverab
 volume = {2042},
 year = {2017}
 }
+
 @inproceedings{gleim2018schemaExtraction,
 abstract = {{\textcopyright} 2018 CEUR-WS. All rights reserved. Sharing privacy sensitive data across organizational boundaries is commonly not a viable option due to the legal and ethical restrictions. Regulations such as the EU General Data Protection Rules impose strict requirements concerning the protection of personal data. Therefore new approaches are emerging to utilize data right in their original repositories without giving direct access to third parties, such as the Personal Health Train initiative [16]. Circumventing limitations of previous systems, this paper proposes an automated schema extraction approach compatible with existing Semantic Web-based technologies. The extracted schema enables ad-hoc query formulation against privacy sensitive data sources without requiring data access, and successive execution of that request in a secure enclave under the data provider's control. The developed approach permit us to extract structural information from non-uniformed resources and merge it into a single schema to preserve the privacy of each data source. Initial experiments show that our approach overcomes the reliance of previous approaches on agreeing upon shared schema and encoding a priori in favor of more flexible schema extraction and introspection.},
 author = {Gleim, L.C. and {Rezaul Karim}, Md. and Zimmermann, L. and Kohlbacher, O. and Stenzhorn, H. and Decker, S. and Beyan, O.},
@@ -21,6 +22,7 @@ title = {{Schema extraction for privacy preserving processing of sensitive data}
 volume = {2112},
 year = {2018}
 }
+
 @inproceedings{pennekamp2019securitychallenges,
 abstract = {The productivity and sustainability advances for (smart) manufacturing resulting from (globally) interconnected Industrial IoT devices in a lab of labs are expected to be significant. While such visions introduce opportunities for the involved parties, the associated risks must be considered as well. In particular, security aspects are crucial challenges and remain unsolved. So far, single stakeholders only had to consider their local view on security. However, for a global lab, we identify several fundamental research challenges in (dynamic) scenarios with multiple stakeholders: While information security mandates that models must be adapted wrt. confidentiality to address these new influences on business secrets, from a network perspective, the drastically increasing amount of possible attack vectors challenges today's approaches. Finally, concepts addressing these security challenges should provide backwards compatibility to enable a smooth transition from today's isolated landscape towards globally interconnected IIoT environments.},
 author = {Pennekamp, Jan and Dahlmanns, Markus and Gleim, Lars and Decker, Stefan and Wehrle, Klaus},
@@ -36,6 +38,7 @@ title = {{Security Considerations for Collaborations in an Industrial IoT-based 
 url = {https://ieeexplore.ieee.org/document/9058413/},
 year = {2019}
 }
+
 @inproceedings{pennekamp2019infrastructure,
 abstract = {New levels of cross-domain collaboration between manufacturing companies throughout the supply chain are anticipated to bring benefits to both suppliers and consumers of products. Enabling a fine-grained sharing and analysis of data among different stakeholders in an automated manner, such a vision of an Internet of Production (IoP) introduces demanding challenges to the communication, storage, and computation infrastructure in production environments. In this work, we present three example cases that would benefit from an IoP (a fine blanking line, a high pressure die casting process, and a connected job shop) and derive requirements that cannot be met by today's infrastructure. In particular, we identify three orthogonal research objectives: (i) real-time control of tightly integrated production processes to offer seamless low-latency analysis and execution, (ii) storing and processing heterogeneous production data to support scalable data stream processing and storage, and (iii) secure privacy-aware collaboration in production to provide a basis for secure industrial collaboration. Based on a discussion of state-of-the-art approaches for these three objectives, we create a blueprint for an infrastructure acting as an enabler for an IoP.},
 author = {Pennekamp, Jan and Glebke, Rene and Henze, Martin and Meisen, Tobias and Quix, Christoph and Hai, Rihan and Gleim, Lars and Niemietz, Philipp and Rudack, Maximilian and Knape, Simon and Epple, Alexander and Trauth, Daniel and Vroomen, Uwe and Bergs, Thomas and Brecher, Christian and Buhrig-Polaczek, Andreas and Jarke, Matthias and Wehrle, Klaus},
@@ -51,6 +54,7 @@ title = {{Towards an infrastructure enabling the internet of production}},
 url = {https://ieeexplore.ieee.org/document/8780276/},
 year = {2019}
 }
+
 @incollection{gleim2020schematree,
 abstract = {Wikidata is a free and open knowledge base which can be read and edited by both humans and machines. It acts as a central storage for the structured data of several Wikimedia projects. To improve the process of manually inserting new facts, the Wikidata platform features an association rule-based tool to recommend additional suitable properties. In this work, we introduce a novel approach to provide such recommendations based on frequentist inference. We introduce a trie-based method that can efficiently learn and represent property set probabilities in RDF graphs. We extend the method by adding type information to improve recommendation precision and introduce backoff strategies which further increase the performance of the initial approach for entities with rare property combinations. We investigate how the captured structure can be employed for property recommendation, analogously to the Wikidata PropertySuggester. We evaluate our approach on the full Wikidata dataset and compare its performance to the state-of-the-art Wikidata PropertySuggester, outperforming it in all evaluated metrics. Notably we could reduce the average rank of the first relevant recommendation by 71{\%}.},
 author = {Gleim, Lars C. and Schimassek, Rafael and H{\"{u}}ser, Dominik and Peters, Maximilian and Kr{\"{a}}mer, Christoph and Cochez, Michael and Decker, Stefan},
@@ -66,6 +70,7 @@ url = {http://link.springer.com/10.1007/978-3-030-49461-2{\_}11},
 volume = {12123 LNCS},
 year = {2020}
 }
+
 @inproceedings{gleim2020factdagProv,
 abstract = {To foster data sharing and reuse across organizational boundaries, provenance tracking is of vital importance for the establishment of trust and accountability, especially in industrial applications, but often neglected due to associated overhead. The abstract FactDAG data interoperability model strives to address this challenge by simplifying the creation of provenance-linked knowledge graphs of revisioned (and thus immutable) resources. However, to date, it lacks a practical provenance implementation. In this work, we present a concrete alignment of all roles and relations in the FactDAG model to the W3C PROV provenance standard, allowing future software implementations to directly produce standard-compliant provenance information. Maintaining compatibility with existing PROV tooling, an implementation of this mapping will pave the way for practical FactDAG implementations and deployments, improving trust and accountability for Open Data through simplified provenance management. Keywords:},
 author = {Gleim, Lars and Tirpitz, Liam and Pennekamp, Jan and Decker, Stefan},
@@ -76,6 +81,7 @@ pages = {1--6},
 title = {{Expressing FactDAG Provenance with PROV-O}},
 year = {2020}
 }
+
 @inproceedings{gleim2020timestampedURLs,
 abstract = {Uniform and persistent resource identifiers play a crucial role for sustainable data management and reuse in evolving knowledge graphs. Recent work identified explicit resource revisioning and immutability as important but insufficiently implemented and standardized components of corresponding data management systems. We propose the implementation of a global, persistent identifier system built upon time-based immutable resource revisioning of generic HTTP resources, as identified by their URL and resolved via time-based HTTP content negotiation, building upon existing Web standards. Supporting both dis- tributed resource archival and state synchronization, the system would provide solutions to the problems of citation (referencing particular resource revisions), archiving (retrieving specific revisions), synchronization (change monitoring), and sustainability (preserving at scale, ensuring long-term access).},
 author = {Gleim, Lars and Decker, Stefan},
@@ -85,6 +91,7 @@ keywords = {archiving,citation,dated uri,evolving knowledge graphs,factid,mement
 title = {{Timestamped URLs as Persistent Identifiers}},
 year = {2020}
 }
+
 @article{gleim2020factdag,
 abstract = {In the production industry, the volume, variety, and velocity of data as well as the number of deployed protocols increase exponentially due to the influences of the Internet-of-Things (IoT) advances. While hundreds of isolated solutions exist to utilize these data, e.g., optimizing processes or monitoring machine conditions, the lack of a unified data handling and exchange mechanism hinders the implementation of approaches to improve the quality of decisions and processes in such an interconnected environment. The vision of an Internet of Production promises the establishment of a Worldwide Lab, where data from every process in the network can be utilized, even interorganizational and across domains. While numerous existing approaches consider interoperability from an interface and communication system perspective, fundamental questions of data and information interoperability remain insufficiently addressed. In this article, we identify ten key issues, derived from three distinctive real-world use cases that hinder large-scale data interoperability for industrial processes. Based on these issues, we derive a set of five key requirements for future (IoT) data layers, building upon the FAIR data principles. We propose to address them by creating FactDAG, a conceptual data layer model for maintaining a provenance-based, directed acyclic graph of facts, inspired by successful distributed version-control and collaboration systems. Eventually, such a standardization should greatly shape the future of interoperability in an interconnected production industry.},
 author = {Gleim, Lars and Pennekamp, Jan and Liebenberg, Martin and Buchsbaum, Melanie and Niemietz, Philipp and Knape, Simon and Epple, Alexander and Storms, Simon and Trauth, Daniel and Bergs, Thomas and Brecher, Christian and Decker, Stefan and Lakemeyer, Gerhard and Wehrle, Klaus},
@@ -102,6 +109,7 @@ url = {https://ieeexplore.ieee.org/document/8957690/},
 volume = {7},
 year = {2020}
 }
+
 @inproceedings{gleim2020openChallenges,
 abstract = {As the volume, variety, and velocity of data published on the Web continue to increase, the management, governance and preservation of these data play an increasingly important role. Data-driven decision making and algorithmic control systems rely on the persistent availability of critical information. However, to date, the free sharing, reuse and interoperability of data are hindered by a number of fundamental open challenges for the management and preservation of evolving data on the Web. In this work, we provide an overview of open challenges and recent efforts to address them. We then propose a data persistence layer for data management and preservation, paving the way for increased interoperability and compatibility.},
 author = {Gleim, Lars and Decker, Stefan},
@@ -111,6 +119,7 @@ keywords = {archiving,citation,data discovery,data preservation,evolving data,kn
 title = {{Open Challenges for the Management and Preservation of Evolving Data on the Web}},
 year = {2020}
 }
+
 @article{gleim2020schemaExtraction,
 abstract = {Background: Sharing sensitive data across organizational boundaries is often significantly limited by legal and ethical restrictions. Regulations such as the EU General Data Protection Rules (GDPR) impose strict requirements concerning the protection of personal and privacy sensitive data. Therefore new approaches, such as the Personal Health Train initiative, are emerging to utilize data right in their original repositories, circumventing the need to transfer data. Results: Circumventing limitations of previous systems, this paper proposes a configurable and automated schema extraction and publishing approach, which enables ad-hoc SPARQL query formulation against RDF triple stores without requiring direct access to the private data. The approach is compatible with existing Semantic Web-based technologies and allows for the subsequent execution of such queries in a safe setting under the data provider's control. Evaluation with four distinct datasets shows that a configurable amount of concise and task-relevant schema, closely describing the structure of the underlying data, was derived, enabling the schema introspection-assisted authoring of SPARQL queries. Conclusions: Automatically extracting and publishing data schema can enable the introspection-assisted creation of data selection and integration queries. In conjunction with the presented system architecture, this approach can enable reuse of data from private repositories and in settings where agreeing upon a shared schema and encoding a priori is infeasible. As such, it could provide an important step towards reuse of data from previously inaccessible sources and thus towards the proliferation of data-driven methods in the biomedical domain.},
 author = {Gleim, Lars Christoph and Karim, Md Rezaul and Zimmermann, Lukas and Kohlbacher, Oliver and Stenzhorn, Holger and Decker, Stefan and Beyan, Oya},
@@ -128,6 +137,7 @@ url = {https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-020-00223-z}
 volume = {11},
 year = {2020}
 }
+
 @inproceedings{gleim2020graphql,
 abstract = {GraphQL is a query language for graph-structured Web APIs, increas- ingly popular among Web developers and recently explored as an alternative query language for Linked Data and its underlying RDF data model. However, to date, the deployment of available GraphQL processors for RDF data requires users to have intricate knowledge of Semantic Web technologies, such as SPARQL and SHACL, as well as the schema of the underlying RDF data.We present Ultra- GraphQL (UGQL), an open source tool enabling the automatic bootstrapping of GraphQL endpoints for existing RDF triple stores, based on an adaptable SPARQL schema extraction, mapping and query translation approach. By automatically generating CRUD mutations for each object type, UGQL further enables write access to RDF data. UGQL thus allows developers with limited or no knowledge of Semantic Web technologies to read and write RDF data using plain GraphQL, eliminating dependencies on third-party schema definitions. By effectively low- ering the entry barrier for working with Linked Data, it has the potential to be a ground-breaker for Semantic Web technologies. Keywords:},
 author = {Gleim, Lars and Holzheim, Tim and Koren, Istv{\'{a}}n and Decker, Stefan},
@@ -137,6 +147,7 @@ keywords = {linked data querying,web engineering,web of data},
 title = {{Automatic Bootstrapping of GraphQL Endpoints for RDF Triple Stores}},
 year = {2020}
 }
+
 @inproceedings{lipp2020,
 abstract = {RDFS and OWL ontologies simultaneously define naming, hierarchy, syntactical data structure, and axioms. This strong coupling complicates the reusability of both ontological concepts and annotated data, due to logical pitfalls in RDFS and OWL semantics. The differences between OWL axioms and integrity constraints used for validation are often not clear to users and lead to confusing and unintended semantics in practice. To avoid these pitfalls, we revisit Tom Gruber's basic ontol- ogy definition and reimagine a more decoupled ontology design pattern, consisting of independent layers for naming, validation, and reasoning. We argue that such decoupling improves reusability because it clarifies the usage of the three layers during ontology creation and reuse. A naming layer built on synonym sets enables reusing named concepts in different contexts, detached from constraints or OWL axioms defined elsewhere. On top of that, we suggest a two-step approach of constraint checking and reasoning: Validate a term's integrity via constraints first, and only include it for reasoning if that validation succeeds. Our proposal is one step towards a clearer in-practice usage of naming, validation, and reasoning - and additionally supports this with a revised semantic layer model.},
 author = {Lipp, Johannes and Gleim, Lars and Decker, Stefan},
@@ -148,6 +159,7 @@ publisher = {CEUR Workshop Proceedings},
 title = {{Towards Reusability in the Semantic Web: Decoupling Naming, Validation, and Reasoning}},
 year = {2020}
 }
+
 @inproceedings{gleim2020factstackPoster,
 abstract = {The management and preservation of the diverse and constantly evolving data on the Web remain an open challenge to date. Interorganizational and interoperable solutions are needed to power e.g. the digital manufacturing supply chain of the future. With FactStack, we devised a uniform and interoperable persistence and preservation layer, inspired by principles from research data management, successful version control systems and implementable throughout the traditional data lifecycle. Employing global, persistent identifiers in combination with resource versioning and data provenance, FactStack enables the on-demand integration of persistence and provenance into existing resource-oriented architectures based on open Web technologies and the FactDAG data interoperability model. As such, FactStack facilitates agile, interorganizational and uniform data management and preservation, effectively supporting the creation of provenance-linked knowledge graphs of versioned and preservable resources as part of the classical data lifecycle. Dated},
 author = {Gleim, Lars},
@@ -157,6 +169,7 @@ title = {{FactStack: Interoperable Data Management and Preservation for the Web 
 type = {Poster},
 year = {2020}
 }
+
 @inproceedings{lipp2021neologism2.0,
 abstract = {Shared vocabularies and ontologies are essential for many applications. Although standards and recommendations already cover many areas, adaptations are usually necessary to represent concrete use-cases properly. Domain experts are unfamiliar with ontology engineering, which creates special requirements for needed tool support. Simple sketch applications are usually too imprecise, while comprehensive ontology editors are often too complicated for non-experts. We present Neologism 2.0-an open-source tool for quick vocabulary creation through domain experts. Its guided vocabulary creation and its collaborative graph editor enable the quick creation of proper vocabularies, even for non-experts, and dramatically reduces the time and effort to draft vocabularies collaboratively. An RDF export allows quick bootstrapping of any other Semantic Web tool.},
 author = {Lipp, Johannes and Gleim, Lars and Cochez, Michael and Dimitriadis, Iraklis and Ali, Hussain and {Hoppe Alvarez}, Daniel and Lange, Christoph and Decker, Stefan},
@@ -166,6 +179,7 @@ keywords = {knowledge graph,ontology creation,semantic web,vocabulary creation,v
 title = {{Towards Easy Vocabulary Drafts with Neologism 2.0}},
 year = {2021}
 }
+
 @incollection{mangel2021reshare,
 abstract = {As decision-making is increasingly data-driven, trustworthiness and reliability of the underlying data, e.g., maintained in knowledge graphs or on the Web, are essential requirements for their usability in the industry. However, neither traditional solutions, such as paper-based data curation processes, nor state-of-the-art approaches, such as distributed ledger technologies, adequately scale to the complex requirements and high throughput of continuously evolving industrial data. Motivated by a practical use case with high demands towards data trustworthiness and reliability, we identify the need for digitally-verifiable data immutability as a still insufficiently addressed dimension of data quality. Based on our discussion of shortcomings in related work, we thus propose ReShare, our novel concept of digital transmission contracts with bilateral signatures, to address this open issue for both RDF knowledge graphs and arbitrary data on the Web. Our quantitative evaluation of ReShare's performance and scalability reveals only moderate computation and communication overhead, indicating significant potential for cost-reductions compared to today's approaches. By cleverly integrating digital transmission contracts with existing Web-based information systems, ReShare provides a promising foundation for data sharing and reuse in Industry 4.0 and beyond, enabling digital accountability through easily-adoptable digitally-verifiable data immutability and non-repudiation.},
 author = {Mangel, Simon and Gleim, Lars and Pennekamp, Jan and Wehrle, Klaus and Decker, Stefan},
@@ -178,6 +192,7 @@ title = {{Data Reliability and Trustworthiness Through Digital Transmission Cont
 url = {https://openreview.net/pdf?id=g7j2e-zlKFS https://link.springer.com/10.1007/978-3-030-77385-4{\_}16},
 year = {2021}
 }
+
 @unpublished{gleim2021factapp_unpublished,
 author = {Gleim, Lars and Leon, M and Brillowski, Florian and Decker, Stefan},
 file = {:C$\backslash$:/Users/g/Documents/Mendeley/2021 - Gleim et al. - Semantic Data Management in the File System through UI Extensions.pdf:pdf},
@@ -185,6 +200,7 @@ title = {{Semantic Data Management in the File System through UI Extensions}},
 url = {https://openreview.net/pdf?id=EoEOMoYFsiM},
 year = {2021}
 }
+
 @inproceedings{gleim2021factstack,
 abstract = {Data exchange throughout the supply chain is essential for the agile and adaptive manufacturing processes of Industry 4.0. As companies employ numerous, frequently mutually incompatible data management and preservation approaches, interorganizational data sharing and reuse regularly requires human interaction and is thus associated with high overhead costs. An interoperable system, supporting the unified management, preservation, and exchange of data across organizational boundaries is missing to date. We propose FactStack, a unified approach to data management and preservation based upon a novel combination of existing Web-standards and tightly integrated with the HTTP protocol itself. Based on the FactDAG model, FactStack guides and supports the full data lifecycle in a FAIR and interoperable manner, independent of individual software solutions and backward-compatible with existing resource oriented architectures. We describe our reference implementation of the approach and evaluate its performance, showcasing scalability even to high-throughput applications. We analyze the system's applicability to industry using a representative real-world use case in aircraft manufacturing based on principal requirements identified in prior work. We conclude that FactStack fulfills all requirements and provides a promising solution for the on-demand integration of persistence and provenance into existing resource-oriented architectures, facilitating data management and preservation for the agile and interorganizational manufacturing processes of Industry 4.0. Through its open-source distribution, it is readily available for adoption by the community, paving the way for improved utility and usability of data management and preservation in digital manufacturing and supply chains.},
 address = {Dresden},
@@ -196,6 +212,7 @@ keywords = {Data Management,Industry 4.0,Memento,PID,Persistence,Web Technologie
 title = {{FactStack: Interoperable Data Management and Preservation for the Web and Industry 4.0}},
 year = {2021}
 }
+
 @incollection{gleim2021Memento,
 author = {Gleim, Lars and Tirpitz, Liam and Decker, Stefan},
 booktitle = {The Semantic Web. ESWC 2021.},
@@ -207,6 +224,7 @@ title = {{HTTP Extensions for the Management of Highly Dynamic Data Resources}},
 url = {https://openreview.net/pdf?id=MMfYujYzVg3 https://link.springer.com/10.1007/978-3-030-77385-4{\_}13},
 year = {2021}
 }
+
 @inproceedings{pieschel2021,
 abstract = {Getting new generations of developers excited about the benefits of the Semantic Web and familiar with the underlying technologies is one of the biggest challenges for furthering its adoption. Inspired by the success of structured digital learning materials in other domains of computer science, we present SemWebNotebooks, a portfolio of interactive Jupyter Notebook tutorials for teaching Semantic Web technologies interactively. By introducing the Jupyter-RDFify plugin, we seamlessly integrate support for RDF and related standards into the Jupyter ecosystem. Motivated by the overwhelmingly positive feedback provided by the students using these materials at RWTH Aachen University and correspondingly high technology acceptance, we release both Jupyter-RDFify and SemWebNotebooks to the community as open source for open reuse and further collaborative improvement.},
 address = {Amsterdam},
@@ -218,6 +236,7 @@ pages = {1--5},
 title = {{Teaching Semantic Web Technologies through Interactive Jupyter Notebooks}},
 year = {2021}
 }
+
 @inproceedings{gleim2021factfuse,
 abstract = {As business processes are increasingly complex, agile, and specialized, provenance information can improve interpretability and contextualization of process data. While individual process steps frequently employ digital computer files, their relationships within the overall process are rarely captured. To address this issue, we extend the factFUSE system for managing versioned Web resources in the file system to capture provenance relationships. By introducing an extensible commit system, we enable recording the relations between digital files and resources in process steps (activities), which are then captured as RDF metadata using the W3C PROV standard. Our evaluation shows that users without prior experience in provenance management successfully employ the system to capture semantic process provenance, attesting to excellent usability and promising utility. factFUSE is available for practical use under open source GNU AGPLv3 license.},
 address = {Amsterdam},
@@ -229,6 +248,7 @@ pages = {1--5},
 title = {{Capturing Provenance Information in the File System}},
 year = {2021}
 }
+
 @incollection{mueller2021factfuse,
 author = {M{\"{u}}ller, Leon and Gleim, Lars},
 booktitle = {Web Engineering. ICWE 2021.},
@@ -240,6 +260,7 @@ title = {{Managing Versioned Web Resources in the File System}},
 url = {https://link.springer.com/10.1007/978-3-030-74296-6{\_}41},
 year = {2021}
 }
+
 @incollection{lipp2021reusability,
 author = {Lipp, Johannes and Gleim, Lars and Decker, Stefan},
 booktitle = {Advances in Pattern-Based Ontology Engineering},
@@ -252,3 +273,37 @@ title = {{Towards Easy Reusability in the Semantic Web}},
 url = {https://ebooks.iospress.nl/doi/10.3233/SSW210023},
 year = {2021}
 }
+
+@InProceedings{Brillowski:840042,
+  author       = {Brillowski, Florian Sascha and Gleim, Lars Christoph and Liebenberg, Martin Roland and Schemmer, Thomas and Tirpitz, Liam and Decker, Stefan Josef and Lakemeyer, Gerhard and Ziefle, Martina and Greb, Christoph and Gries, Thomas},
+  booktitle    = {CAMX – The Composites and Advanced Materials Expo, October 19-21, 2021, Dallas, TX},
+  title        = {{Towards a Continuously Improving Composites Manufacturing by Employing the Internet of Production}},
+  year         = {2021},
+  address      = {Diamond Bar, CA},
+  month        = {Oct},
+  organization = {CAMX – The Composites and Advanced Materials Expo, Dallas, TX (USA), 19 Oct 2021 - 21 Oct 2021},
+  pages        = {TP21-0000000312},
+  publisher    = {SAMPE North America},
+  cid          = {$I:(DE-82)419110_20140620$ / $I:(DE-82)080067_20181221$ / $I:(DE-82)124510_20160614$ / $I:(DE-82)792310_20140620$ / $I:(DE-82)120000_20140620$ / $I:(DE-82)121920_20140620$ / $I:(DE-82)080013_20140620$},
+  cin          = {419110 / 080067 / 124510 / 792310 / 120000 / 121920 / 080013},
+  comment      = {CAMX – The Composites and Advanced Materials Expo,
+                      October 19-21, 2021, Dallas, TX},
+  date         = {2021-10-19},
+  pid          = {G:(DE-82)X080067-WS-A.III},
+  pnm          = {WS-A.III - Functional Perspective (X080067-WS-A.III)},
+  reportid     = {RWTH-2022-00999},
+  typ          = {PUB:(DE-HGF)8 / PUB:(DE-HGF)7},
+  url          = {https://publications.rwth-aachen.de/record/840042},
+}
+
+@InProceedings{angelidis2022,
+  author    = {Emmanouil Angelidis and Jan Bender and Jonathan Arreguit and Lars Gleim and Wei Wang and Cristian Axenie and Alois Knoll and Auke Ijspeert},
+  booktitle = {2022 {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS})},
+  title     = {Gazebo Fluids: {SPH}-based simulation of fluid interaction with articulated rigid body dynamics},
+  year      = {2022},
+  month     = {oct},
+  publisher = {{IEEE}},
+  doi       = {10.1109/iros47612.2022.9982036},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

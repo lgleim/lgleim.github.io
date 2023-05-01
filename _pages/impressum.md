@@ -5,13 +5,13 @@ permalink: /impressum/
 nav: false
 ---
 
-Lars Gleim, M.Sc.\
+Lars Gleim\
 Informatik 5\
 RWTH Aachen University\
-Ahornstr. 55, Building E2, Room 6013\
+Ahornstr. 55,
 52056 Aachen, Germany
 
-Website: lgleim.de
+Website: lgleim.github.io
 
 #### Datenschutzerklärung
 
@@ -76,12 +76,12 @@ Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begrif
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
 
 Lars Gleim\
-Informatik 5
-Ahornstr. 55
-52056 Aachen\
-Deutschland
+Informatik 5\
+RWTH Aachen University\
+Ahornstr. 55,
+52056 Aachen, Germany
 
-Website: lgleim.de
+Website: lgleim.github.io
 
 #### 3\. Erfassung von allgemeinen Daten und Informationen
 
