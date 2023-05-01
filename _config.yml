@@ -3,12 +3,12 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Lars
+first_name: Dr. Lars
 middle_name: C.
 last_name: Gleim
 email: gleim@cs.rwth-aachen.de
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The personal website of Lars Gleim, a researcher in computer science at the Chair of Databases and Information Systems (DBIS) at RWTH Aachen University.
+  The personal website of Lars Gleim, a researcher and Senior R&D Engineer at the Huawei Cloud Munich Research Center.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
